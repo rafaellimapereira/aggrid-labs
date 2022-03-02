@@ -4,9 +4,9 @@ import 'ag-grid-community/dist/styles/ag-theme-alpine.css';
 import { AgGridColumn, AgGridReact } from 'ag-grid-react';
 import React, { useEffect, useRef, useState } from 'react';
 
-import useGrid from './useGrid';
+import useGrid from '../libs/useGrid';
 
-const App = () => {
+const Grid = () => {
   const [rowData, setRowData] = useState([]);
   const grid = useGrid('recruiting');
   const gridRef = useRef(null);
@@ -69,4 +69,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Grid;
